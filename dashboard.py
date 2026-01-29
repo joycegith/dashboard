@@ -172,7 +172,7 @@ st.title("Interactive Revenue Trends")
 with st.sidebar:
     st.header("Data source")
     uploaded = st.file_uploader("Upload XLSX", type=["xlsx"])
-    default_path = "C:/Users/u0003989/Downloads/AP.xlsx"
+    default_path = "AP.xlsx"
     use_default = st.checkbox(f"Use default file ({default_path})", value=(uploaded is None))
 
     st.divider()
@@ -332,3 +332,4 @@ else:
     st.info("Click a line/marker or use lasso select to display a product card (requires the optional component).")
 
 st.caption("Tip: You can also toggle traces directly in the Plotly legend.")
+
